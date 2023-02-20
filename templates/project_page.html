@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title%} Project page {% endblock %}
+
+{% block body %}
+
+<nav class="nav">
+    <div><p> 👋🏾 Welcome</p></div>
+    <div class="space">
+        <div class="home"><a href="{{ url_for('hello_world') }}"><p> 🏠 Home </p></a></div>
+        <div class="about"><a href="{{ url_for('about') }}"><p>🧔🏾‍♂️ About Me</p></a></div>
+        <div class="contact"><a href="{{ url_for('contact') }}"><p> 🤙🏽 Contact</p></a></div>
+    </div>
+</nav>
+
+
+    <p>Projects</p>
+{% endblock %}

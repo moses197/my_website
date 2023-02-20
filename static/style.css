@@ -36,8 +36,66 @@ nav a {
 .nav .space {
     margin-right: 2rem;
     display: flex;
+    gap: .5rem;
+}
+
+.home {
+    background-color: rgba(51, 50, 99, 0.562);
+}
+
+.home:hover {
+    background-color: rgba(42, 32, 58, 0.596);
+    /* color: blue; */
 }
 
 .about {
     background-color: rgb(162, 113, 207);
+}
+
+.about:hover {
+    background-color: rgba(46, 104, 88, 0.651);
+}
+
+.interest {
+    background-color: rgb(97, 149, 179);
+}
+
+.interest:hover {
+    background-color: rgb(202, 135, 135);
+}
+
+.contact {
+    background-color: rgb(213, 100, 241);
+}
+
+.contact:hover {
+    background-color: rgba(105, 82, 53, 0.87);
+}
+
+.jetliner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.pic {
+    width: 10rem;
+    height: 10rem;
+    border-image: fill;
+    border: teal;
+    border-radius: 2px;
+    /* margin-left: 10rem; */
+}
+
+.greet {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.jk {
+    width: 60%;
+    height: auto;
 }

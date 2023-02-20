@@ -15,7 +15,7 @@ def about():
 def contact():
     return render_template("contact_page.html")
 
-@app.route("/")
+@app.route("/project")
 def project():
     return render_template("project_page.html")
 

@@ -1,33 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Moses's Page</title>
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
+
     <nav class="nav">
         <div><p> 👋🏾 Welcome</p></div>
         <div class="space">
-            <div class="about"><a href="#"><p>🧔🏾‍♂️ About Me</p></a></div>
-            <div class="interest"><a href="#"><p>⏳ Projects</p></a></div>
-            <div class="Contact"><a href="#"><p> 🤙🏽 Contact</p></a></div>
+            <div class="about"><a href="{{ url_for('about') }}"><p>🧔🏾‍♂️ About Me</p></a></div>
+            <div class="interest"><a href="{{ url_for('project') }}"><p>⏳ Projects</p></a></div>
+            <div class="contact"><a href="{{ url_for('contact') }}"><p> 🤙🏽 Contact</p></a></div>
         </div>
     </nav>
     
     <main>
-        <div class="">
-            <div class="hu"></div>
-            <div class="jk"></div>
+        <div class="jetliner">
+            <img src="{{ url_for('static', filename='/images/ugly_pic_ever.jpg') }}" class="pic" alt="">
+            <div class="greet">Hello!!...</div>
+            <div class="jk">I'm Moses, a Computer Scientist and I live in Ondo, Nigeria. I am a Student of Federal
+                University of Agriculture, Abeokuta(AKA FUNAAB). I am interested in Quantum Computing, 
+                Hareware Programming/ Low level Programming,
+                Hacking, Human Psychology, and Game Development.
+                I am currently in school, 300lvl student @ FUNAAB
+            </div>
         </div>
     </main>
     
-    <footer>
-        <div class=""></div>
-    </footer>
-
-    </div>
-</body>
-</html>
+{% endblock %}
