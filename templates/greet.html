@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} Welcome Page {% endblock %}
+
+{% block body %} 
+<div class="form-cl">
+    <form action="/home" method="post">
+        <p>Welcome to my page I'll like to know your name</p>
+        <input name="name" type="text" autofocus placeholder="Enter your name">
+        <button type="submit">Enter</button>
+    </form>
+</div>
+
+{% endblock %}

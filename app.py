@@ -1,11 +1,20 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect, request
 
 app = Flask(__name__)
 
 @app.route("/")
-@app.route("/home")
+def greet():
+    return render_template("greet.html")
+
+@app.route("/home", methods=["GET", "POST"])
 def hello_world():
-    return render_template("index.html")
+    if request.method == "POST":
+        name = request.form.get("name")
+        return render_template("index.html", name=name)
+    if request.method == "GET":
+        return render_template("greet.html")
+    # else:
+    #     return redirect
 
 @app.route("/about")
 def about():

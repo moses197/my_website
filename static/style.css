@@ -99,15 +99,99 @@ nav a {
     font-weight:900;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3.5rem;
 }
 
 .salute {
     align-items: flex-start;
+    color: #475323;
+}
+
+.salute > span {
+    color: rgb(17, 32, 5);
 }
 
 .jk {
     width: 60%;
     height: auto;
     font-size: large;
+}
+
+.jk > p {
+    margin-bottom: 1.2rem;
+}
+
+main > .bullock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.lol > img {
+    margin-top: 3em;
+    width: 200px;
+    height: 200px;
+    border: 7px solid #475323;
+    border-radius: 50%;
+}
+
+.shiss {
+    border-top: .3rem solid #475323;
+}
+
+.shiss > p {
+    margin-top: 1rem;
+    width: 50em;
+    height: auto;
+    text-align: center;
+}
+
+
+.form-cl {
+    width: 400px;
+    height: 400px;
+    margin-left: 40%;
+    margin-top: 8rem;
+    background-color: rgb(141, 134, 124);
+    padding-top: 8rem;
+    border-radius: 20px;
+
+}
+
+.form-cl > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: .9em;
+}
+
+.form-cl > form > p {
+    color: #2e092c;
+    /* font-size: larger; */
+    font-weight: 600;
+    padding-left: 3em;
+}
+
+.form-cl > form > input {
+    width: 70%;
+    height: 30px;   
+    border-style: hidden;
+    font-weight:600;
+    border-radius: 1px;
+}
+
+.form-cl > form > button {
+    width: 70%;
+    height: 30px;
+    background-color: rgb(51, 51, 224);
+    border-style: hidden;
+    border-radius: 5%;
+}
+
+.form-cl > form > button:hover {
+    background-color: blue;
 }
